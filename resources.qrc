@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/chicken.png</file>
+        <file>images/redlaser.png</file>
+        <file>images/ship.png</file>
+        <file>images/space.jpg</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>sounds/Chicken Scream Noise - Sound Effect for editing.mp3</file>
+        <file>sounds/X2Download.app - Laser Shot Sound Effect (128 kbps).mp3</file>
+    </qresource>
+</RCC>
