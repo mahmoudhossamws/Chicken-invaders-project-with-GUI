@@ -31,9 +31,10 @@ void health:: increase()
 }
 void health::gameover()
 {
-    game->myplayer->isgameover=true;
-    game->scene->removeItem(game->myplayer);
-     game->scene->removeItem(game->score);
-    game->scene->removeItem(game->health);
+  //  game->myplayer->isgameover=true;
+  //  game->scene->removeItem(game->myplayer);
+    // game->scene->removeItem(game->score);
+   // game->scene->removeItem(game->health);
+  game->scene->clear();
     QMessageBox::about(game,"GAME OVER       ","You lost              \n Score: " +QString::number(game->score->currentscore));
 }

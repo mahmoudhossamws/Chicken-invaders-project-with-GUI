@@ -25,6 +25,18 @@ Enemy::Enemy() {
 // Function move: move the enemy downwards untill the end of the scene then remove it and delete it
 void Enemy:: move()
 {
+    QList<QGraphicsItem *> coliding_items=collidingItems();
+    for (int i=0,n=coliding_items.size();i<n;i++)
+    {
+        if (typeid(*(coliding_items[i]))==typeid(Player))
+        {
+            game->score->decrease();
+            game->health->decrease();
+            scene()->removeItem(this);
+            delete this;
+            return;
+        }
+    }
 
     setPos(x(),y()+5);
 
